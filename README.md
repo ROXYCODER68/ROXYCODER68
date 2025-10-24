@@ -63,7 +63,6 @@ Seasoned Full-Stack Developer with 5+ years of experience designing and implemen
 - **Technical Lead** at [Company Name] - Led team of 5 developers
 - **Open Source Contributor** to [Notable Project]
 - **Speaker** at [Tech Conference Name] 2023
-- **Hackathon Winner** - [Event Name] 2022
 
 ## ✍️ Recent Articles
 
@@ -73,12 +72,12 @@ Seasoned Full-Stack Developer with 5+ years of experience designing and implemen
 
 ## 🛠️ Recent Projects
 
-### [Project Name 1](https://github.com/tapassahoo78/project1)
+### [Project Name 1](https://github.com/TapasSahoo78/Ecom-with-Redux-Saga.git)
 ![Project Screenshot](https://via.placeholder.com/400x200?text=Project+Screenshot)
 - Description of the project and technologies used
 - Key features and achievements
 
-### [Project Name 2](https://github.com/tapassahoo78/project2)
+### [Project Name 2](https://github.com/TapasSahoo78/laravel-assignment-elevator-system.git)
 ![Project Screenshot](https://via.placeholder.com/400x200?text=Project+Screenshot)
 - Description of the project and technologies used
 - Key features and achievements
