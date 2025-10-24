@@ -1,4 +1,4 @@
-<h1 align="center">👋 Hello World! I'm Tapas Sahoo</h1>
+<h1 align="center">👋 Hello! I'm Tapas Sahoo</h1>
 <h3 align="center">Senior Full-Stack Engineer | Cloud Architect | Tech Evangelist</h3>
 
 <p align="center">
