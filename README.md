@@ -59,10 +59,7 @@ Seasoned Full-Stack Developer with 5+ years of experience designing and implemen
 
 ## 🏆 Professional Highlights
 
-- **AWS Certified Developer** - 2023
-- **Technical Lead** at [Company Name] - Led team of 5 developers
-- **Open Source Contributor** to [Notable Project]
-- **Speaker** at [Tech Conference Name] 2023
+- **Full Stack Developer** - 2021 - Present
 
 ## ✍️ Recent Articles
 
