@@ -48,10 +48,10 @@ Seasoned Full-Stack Developer with 5+ years of experience designing and implemen
 
 ## 📊 GitHub Analytics
 
-<div align="center">
+<!-- <div align="center">
   <img height="180em" src="https://github-readme-stats.vercel.app/api?username=tapassahoo78&show_icons=true&theme=dark&count_private=true&include_all_commits=true&hide_border=true"/>
   <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=tapassahoo78&layout=compact&theme=dark&langs_count=8&hide_border=true"/>
-</div>
+</div> -->
 
 <div align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=tapassahoo78&theme=dark&hide_border=true" alt="GitHub Streak"/>
