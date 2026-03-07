@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>YouTube Thumbnail Generator</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+background:#0b0d10;
+font-family:Segoe UI,Roboto,sans-serif;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+min-height:100vh;
+padding:30px;
+}
+
+h2{
+color:white;
+margin-bottom:20px;
+font-weight:800;
+}
+
+#thumbnail{
+width:1280px;
+height:720px;
+background:linear-gradient(145deg,#0b1c2f,#1d2f44,#e32b2b);
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:50px 70px 50px 60px;
+position:relative;
+border:4px solid rgba(255,215,0,0.3);
+}
+
+/* series text */
+
+.series{
+font-size:44px;
+font-weight:900;
+color:#FFD700;
+margin-bottom:10px;
+}
+
+/* main title */
+
+.title{
+font-size:120px;
+font-weight:900;
+line-height:0.95;
+max-width:720px;
+color:#FFD700;
+text-shadow:8px 8px 0 #000;
+}
+
+/* subtitle */
+
+.subtitle{
+font-size:52px;
+font-weight:900;
+background:#FFD700;
+color:black;
+padding:15px 35px;
+margin-top:20px;
+display:inline-block;
+}
+
+/* tutorial number */
+
+.tutorial-number{
+position:absolute;
+bottom:40px;
+left:60px;
+background:#FF0000;
+color:white;
+font-size:90px;
+font-weight:900;
+padding:5px 40px;
+border-radius:80px 20px 80px 20px;
+border:4px solid white;
+}
+
+/* logo */
+
+.logo-area{
+position:absolute;
+top:40px;
+right:50px;
+background:black;
+padding:15px 35px;
+border-radius:100px;
+border:4px solid #FFD700;
+}
+
+.logo-text{
+font-size:40px;
+font-weight:900;
+color:#FFD700;
+}
+
+/* face */
+
+.face{
+width:360px;
+height:360px;
+border-radius:50%;
+overflow:hidden;
+border:12px solid #FFD700;
+}
+
+.face img{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+/* controls */
+
+.controls{
+margin-top:40px;
+background:#1e1e2a;
+padding:30px;
+border-radius:20px;
+display:flex;
+flex-wrap:wrap;
+gap:15px;
+justify-content:center;
+}
+
+.controls input{
+padding:12px;
+font-size:16px;
+width:250px;
+}
+
+.controls button{
+padding:12px 25px;
+font-size:16px;
+font-weight:bold;
+background:#FFD700;
+border:none;
+cursor:pointer;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h2>YouTube Thumbnail Generator</h2>
+
+<div id="thumbnail">
+
+<div class="tutorial-number" id="tutorialNumberDisplay">#01</div>
+
+<div class="logo-area">
+<span class="logo-text" id="logoTextDisplay">ROXY CODER</span>
+</div>
+
+<div class="text">
+<div class="series" id="seriesText">JavaScript Series</div>
+<div class="title" id="titleText">OBJECTS IN JS</div>
+<div class="subtitle" id="subtitleText">10 MINUTES</div>
+</div>
+
+<div class="face">
+<img src="https://i.imgur.com/8Km9tLL.jpg">
+</div>
+
+</div>
+
+<div class="controls">
+
+<input id="tutorialInput" placeholder="Tutorial # (ex: #01)">
+<input id="logoInput" placeholder="Logo Text">
+<input id="seriesInput" placeholder="Series Name">
+<input id="titleInput" placeholder="Title">
+<input id="subInput" placeholder="Subtitle">
+
+<br>
+
+<button onclick="updateThumbnail()">Update</button>
+<button onclick="downloadThumbnail()">Download</button>
+
+</div>
+
+<script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+
+<script>
+
+function updateThumbnail(){
+
+document.getElementById("tutorialNumberDisplay").innerText =
+document.getElementById("tutorialInput").value;
+
+document.getElementById("logoTextDisplay").innerText =
+document.getElementById("logoInput").value;
+
+document.getElementById("seriesText").innerText =
+document.getElementById("seriesInput").value;
+
+document.getElementById("titleText").innerText =
+document.getElementById("titleInput").value;
+
+document.getElementById("subtitleText").innerText =
+document.getElementById("subInput").value;
+
+}
+
+function downloadThumbnail(){
+
+html2canvas(document.getElementById("thumbnail")).then(canvas => {
+
+let link=document.createElement("a");
+link.download="youtube_thumbnail.png";
+link.href=canvas.toDataURL();
+link.click();
+
+});
+
+}
+
+</script>
+
+</body>
+</html>
